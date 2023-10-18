@@ -77,10 +77,6 @@ span {
     transform: translate(-50%, -50%);
 }
 
-.nao:hover {
-    text-outline: 2px solid #ffcc00; /* Adicione uma borda interna ao texto quando o botão estiver em hover */
-}
-
 .proposta {
     color: white;
     font-size: 20px;;
