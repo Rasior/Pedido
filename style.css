@@ -56,14 +56,16 @@ span {
 }
 
 .heart {
-    font-size: 50px;
+    padding bottom: 0px;
+    margin: 0;
+    font-size: 25px;
     color: #ff3366;
     cursor: pointer;
 }
 
 #nao {
     font-size: 24px;
-    color: #ffeded;
+    color: #0d2713;
     background-color: transparent;
     border: none;
     cursor: pointer;
