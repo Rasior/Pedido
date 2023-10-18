@@ -10,12 +10,15 @@
     <div class="container">
         <div class="box">
         <h1>Pedido Especial</h1>
-        <img id="minhaImagem" src="images/cat.jpg" onmouseover="trocarImagem()" onmouseout="restaurarImagem()" width="550" height="550">
-        <p>Olá Senhorita Milena,<br>
-        Gostaria de me acompanhar na próxima semana para assistirmos um filme?<br>
-        Depois podemos jantar e ficar de chamego. </p>
-        <span>uma coisa, recusar é impossível, pode tentar</span>
-        <p class="heart" onclick="mostrarResposta()">❤️</p>
+        <p>Olá Senhorita Milena!<br>
+        Hora de uma escapada épica de fim de semana! <br>Vista sua roupa mais maravilhosa e fique preparada. <br>Garanto que será inesquecível!</p>
+        <img id="minhaImagem" src="images/cat.jpg" onmouseover="trocarImagem()" onmouseout="restaurarImagem()" width="400" height="400"><br>
+        <span class="proposta">Minha proposta </span>
+        <p>Um filme e um jantar bem satistório com muita risada e chamego!</p>
+        <span>Para aceitar, clique no coração</span><br>
+        <span>Não recomendo tentar clicar no Não</span><br>
+        <span> tá duvidando? testa aí</span>
+        <p id="texto" class="heart" onclick="mostrarResposta()" >❤️</p>
         <button id="nao" onmouseover="mudarPosicao()">Não</button>
         <p id="resposta" style="display: none;"></p>
         </div>
@@ -36,13 +39,21 @@
 
         function trocarImagem() {
             var imagem = document.getElementById('minhaImagem');
-            imagem.src = 'images/cat2.jpg';
+            imagem.src = 'images/princesa.jpg';
         }
 
         function restaurarImagem() {
             var imagem = document.getElementById('minhaImagem');
             imagem.src = 'images/cat.jpg';
         }
+
+        const texto = document.getElementById('texto');
+        const botao = document.getElementById('nao');
+
+        texto.addEventListener('click', function() {
+        nao.style.display = 'none'; // Oculta o botão ao clicar no texto
+        }
+);
     </script>
 </body>
 </html>

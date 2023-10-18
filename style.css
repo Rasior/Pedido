@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Junge&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Junge&family=Poppins:wght@500&display=swap');
+
 .container {
     width: 100vw;
     height: 100vh;
-    background: linear-gradient(180deg, #64DBA0, #327956 );
+    background: linear-gradient(360deg, #506b56, #7ba47e, #9cd09c, #a0d6a0  );
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -12,10 +13,10 @@
 
 .box {
     width: 600px;
-    height: 100vh;
-    background: linear-gradient(180deg, #4a6d47, #193a18 70.71%);
-    box-shadow:  2px 2px 2px rgba(255, 255, 255, 0.062);
-    border-radius: 5px;
+    height: 98vh;
+    background: linear-gradient(360deg, #506b56, #7ba47e);
+    box-shadow: 0px -5px 4px 1px rgba(255, 255, 255, 0.377);
+    border-radius: 25px;
     }
 
 body {
@@ -26,26 +27,29 @@ body {
 
 img {
     border-radius: 20px;
-    box-shadow:  2px 2px 2px rgba(255, 255, 255, 0.062);
 }
 
 
 h1, p {
     color: rgb(231, 231, 231);
+    text-align: center justify;
 }
 
 h1 {
     font-family: 'Junge', cursive;
     font-size: 50px;
+    margin-top: 15px;
+    margin-bottom: 2px;
 }
 
 p {
+    padding: 10px;
     margin: 2px;
     font-family: 'Poppins', sans-serif;
 }
 
 span {
-    color: rgb(0, 162, 255);
+    color: #abe4ab;
     font-family: 'Poppins', sans-serif;
     font-size: 0.8em;
 }
@@ -64,5 +68,19 @@ span {
     cursor: pointer;
     position: absolute;
     text-align: center;
-    border: #193a18;
+    left: 50%;
+    top: 92%;
+    transform: translate(-50%, -50%);
+}
+
+.nao:hover {
+    text-outline: 2px solid #ffcc00; /* Adicione uma borda interna ao texto quando o botão estiver em hover */
+}
+
+.proposta {
+    color: white;
+    font-size: 2em;
+    font-weight: bold;
+    padding: 10px;
+    margin: 10px;
 }
