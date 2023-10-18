@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Pedido Especial</title>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+        <h1>E hoje temos um pedido especial!</h1>
+        <img src="images/cat.jpg" alt="">
+        <p>Olá Senhorita Milena,</p>
+        <p>Quero dizer que você ilumina minha vida como ninguém mais.</p>
+        <p>Você aceita namorar comigo?</p>
+        <p class="heart" onclick="mostrarResposta()">❤️</p>
+        <button id="nao" onmouseover="mudarPosicao()">Não</button>
+        <p id="resposta" style="display: none;"></p>
+        </div>
+    </div>
+    <script>
+        function mostrarResposta() {
+            document.getElementById('resposta').style.display = 'block';
+            document.getElementById('resposta').innerHTML = 'Sim! Eu aceito, meu amor. ❤️';
+        }
+
+        function mudarPosicao() {
+            const buttonNao = document.getElementById('nao');
+            const randomX = Math.floor(Math.random() * window.innerWidth);
+            const randomY = Math.floor(Math.random() * window.innerHeight);
+            buttonNao.style.left = `${randomX}px`;
+            buttonNao.style.top = `${randomY}px`;
+        }
+    </script>
+</body>
+</html>

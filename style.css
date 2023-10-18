@@ -1,0 +1,27 @@
+.container {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(217deg, #64DBA0, #6FA88C 70.71%);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    }
+
+.box {
+    width: 600px;
+    height: 100vh;
+    background: linear-gradient(217deg, #324231, #1D331C 70.71%);
+    box-shadow:  2px 2px 2px rgba(100, 8, 8, 0.281);
+    border-radius: 20px;
+    }
+
+body {
+    margin: 0px;
+    text-align: center;
+}
+
+
+h1, p {
+    color: rgb(231, 231, 231);
+}
