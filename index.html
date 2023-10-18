@@ -9,11 +9,12 @@
 <body>
     <div class="container">
         <div class="box">
-        <h1>E hoje temos um pedido especial!</h1>
-        <img src="images/cat.jpg" alt="">
-        <p>Olá Senhorita Milena,</p>
-        <p>Quero dizer que você ilumina minha vida como ninguém mais.</p>
-        <p>Você aceita namorar comigo?</p>
+        <h1>Pedido Especial</h1>
+        <img id="minhaImagem" src="images/cat.jpg" onmouseover="trocarImagem()" onmouseout="restaurarImagem()" width="550" height="550">
+        <p>Olá Senhorita Milena,<br>
+        Gostaria de me acompanhar na próxima semana para assistirmos um filme?<br>
+        Depois podemos jantar e ficar de chamego. </p>
+        <span>uma coisa, recusar é impossível, pode tentar</span>
         <p class="heart" onclick="mostrarResposta()">❤️</p>
         <button id="nao" onmouseover="mudarPosicao()">Não</button>
         <p id="resposta" style="display: none;"></p>
@@ -22,7 +23,7 @@
     <script>
         function mostrarResposta() {
             document.getElementById('resposta').style.display = 'block';
-            document.getElementById('resposta').innerHTML = 'Sim! Eu aceito, meu amor. ❤️';
+            document.getElementById('resposta').innerHTML = 'É uma honra sempre estar com você! ❤️';
         }
 
         function mudarPosicao() {
@@ -31,6 +32,16 @@
             const randomY = Math.floor(Math.random() * window.innerHeight);
             buttonNao.style.left = `${randomX}px`;
             buttonNao.style.top = `${randomY}px`;
+        }
+
+        function trocarImagem() {
+            var imagem = document.getElementById('minhaImagem');
+            imagem.src = 'images/cat2.jpg';
+        }
+
+        function restaurarImagem() {
+            var imagem = document.getElementById('minhaImagem');
+            imagem.src = 'images/cat.jpg';
         }
     </script>
 </body>

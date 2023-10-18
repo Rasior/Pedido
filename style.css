@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Junge&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Junge&family=Poppins:wght@500&display=swap');
 .container {
     width: 100vw;
     height: 100vh;
-    background: linear-gradient(217deg, #64DBA0, #6FA88C 70.71%);
+    background: linear-gradient(180deg, #64DBA0, #327956 );
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -11,17 +13,56 @@
 .box {
     width: 600px;
     height: 100vh;
-    background: linear-gradient(217deg, #324231, #1D331C 70.71%);
-    box-shadow:  2px 2px 2px rgba(100, 8, 8, 0.281);
-    border-radius: 20px;
+    background: linear-gradient(180deg, #4a6d47, #193a18 70.71%);
+    box-shadow:  2px 2px 2px rgba(255, 255, 255, 0.062);
+    border-radius: 5px;
     }
 
 body {
     margin: 0px;
     text-align: center;
+    background: linear-gradient(180deg, #64DBA0, #327956 );
+}
+
+img {
+    border-radius: 20px;
+    box-shadow:  2px 2px 2px rgba(255, 255, 255, 0.062);
 }
 
 
 h1, p {
     color: rgb(231, 231, 231);
+}
+
+h1 {
+    font-family: 'Junge', cursive;
+    font-size: 50px;
+}
+
+p {
+    margin: 2px;
+    font-family: 'Poppins', sans-serif;
+}
+
+span {
+    color: rgb(0, 162, 255);
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.8em;
+}
+
+.heart {
+    font-size: 50px;
+    color: #ff3366;
+    cursor: pointer;
+}
+
+#nao {
+    font-size: 24px;
+    color: #ffeded;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    text-align: center;
+    border: #193a18;
 }
